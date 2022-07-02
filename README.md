@@ -1,1 +1,1 @@
-This is repo that contains all the ALX Low Level Programming with C
+Variables, if, else and while projects during software engineering program
