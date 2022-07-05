@@ -1,10 +1,13 @@
 #include "main.h"
-
 /**
- * print_sign -> prints sign based on condition
- * @n: argument passed
- * Return: 1, 0 -1
-*/
+ * print_sign - function
+ *
+ * @n: The character to evaluate
+ *
+ * Return: Get 1 if c is positive,
+ * get 0 if it's 0, and
+ * get -1 otherwise
+ */
 int print_sign(int n)
 {
 	if (n > 0)
@@ -19,8 +22,7 @@ int print_sign(int n)
 	}
 	else
 	{
-	_putchar('_');
-	return (-1);
+		_putchar('-');
+		return (-1);
 	}
-	_putchar('\n');
 }
