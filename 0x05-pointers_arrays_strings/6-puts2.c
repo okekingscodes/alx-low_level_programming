@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 
 /**
 * puts2 -> functions to puts
