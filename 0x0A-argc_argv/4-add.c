@@ -1,31 +1,28 @@
 #include <stdio.h>
-
+#include <stdlib.h>
+#include <ctype.h>
 /**
-* main -> This is a function that add two numbers using argc and argv
-* @argc: argc is a parameter
-* @argv: an array of a command line listed
-* Return: result
-*/
+ * main - adds positive numbers.
+ * @argc: number of command line arguments.
+ * @argv: array that contains the program command line arguments.
+ * Return: 0 - success.
+ */
 int main(int argc, char *argv[])
 {
-	int result = 0, num, i, j, k;
+	int i, j, add = 0;
 
 	for (i = 1; i < argc; i++)
 	{
 		for (j = 0; argv[i][j] != '\0'; j++)
 		{
-			if (argv[i][j] > '9' || argv[i][j] < '0')
+			if (!isdigit(argv[i][j]))
 			{
-				printf("%s\n", "Error");
+				printf("Error\n");
 				return (1);
 			}
 		}
+		add += atoi(argv[i]);
 	}
-	for (k = 1; k < argc; k++)
-	{
-		num = atoi(argv[k]);
-		result += num;
-	}
-	printf("%d\n", result);
+	printf("%d\n", add);
 	return (0);
 }
