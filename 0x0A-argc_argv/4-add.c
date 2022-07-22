@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 
 	for (i = 1; i < argc; i++
 	{
-		for (j = 0; argv[i][j] != '\0'; j++
+		for (j = 0; argv[i][j] != '\0'; j++)
 		{
 			if (argv[i][j] > '9' || argv[i][j] < '0')
 			{
